@@ -1,0 +1,208 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #666;
+}
+ul{ list-style: none; }
+#cart{
+	width: 938px;
+	margin: 20px auto;
+}
+#cart_header{ 
+	font-weight: bold;
+	font-size: 16px;
+	background-color: #e2f2ff;
+	height: 33px; 
+	line-height: 30px;
+ }
+#cart_header ul{
+	overflow: hidden;
+	border-top: 3px solid #a7cbff;
+	border-bottom: 1px solid #a7cbff;
+	border-left: 1px solid #a7cbff;
+}
+#cart_header li{
+	float: left;
+	text-align: center;
+	border-right: 1px solid #CADEFF;
+}
+#cart_header li.list_check{
+	width: 80px;
+}
+#cart_header li.list_good{
+	width: 320px;
+}
+#cart_header li.list_price{
+	width: 150px;
+}
+#cart_header li.list_count{
+	width: 110px;
+}
+#cart_header li.list_subTotal{
+	width: 170px;
+}
+#cart_header li.list_act{
+	width: 100px;
+}
+#cart_item{}
+#cart_item .item_i{
+	text-align: center;
+	border-bottom: 1px solid #a7cbff;
+	border-left: 1px solid #a7cbff;
+	overflow: hidden;
+}
+#cart_item .checkbox{
+	/*display: inline-block;*/
+	float: left;
+	width: 80px;
+	height: 60px;
+	text-align: center;
+	padding-top: 40px;
+	border-right: 1px solid #CADEFF;
+}
+#cart_item .good{
+	/*display: inline-block;*/
+	float: left;
+	width: 320px;
+	height: 100px;
+	border-right: 1px solid #CADEFF;
+}
+#cart_item .good img{
+	width: 100px;
+	height: 80px;
+	float: left;
+	margin: 10px 10px;
+}
+#cart_item .good span{
+	float: left;
+	padding-top: 30px;
+}
+#cart_item .price{
+	width: 150px;
+	height: 60px;
+	padding-top: 40px;
+	float: left;
+	border-right: 1px solid #CADEFF;
+}
+#cart_item .count{
+	padding: 40px 0 0 10px;
+	border-right: 1px solid #CADEFF;
+	float: left;
+	width: 100px;
+	height: 60px;
+}
+#cart_item .count .count_input{
+	width: 50px;
+	height: 15px;
+	float: left;
+	text-align: center;
+	padding: 4px 0;
+	border: 1px solid #aaa;
+}
+#cart_item .count .reduce,#cart_item .count .add{
+	display: inline-block;
+	width: 17px;
+	height: 23px;
+	float: left;
+	background-color: #e5e5e5;
+	border: 1px solid #e5e5e5;
+	cursor: pointer;
+}
+#cart_item .subTotal{
+	padding-top: 40px; 
+	float: left;
+	width: 170px;
+	height: 60px;
+	color: red;
+	font-weight: bold;
+	border-right: 1px solid #CADEFF;
+}
+#cart_item .act{
+	float: left;
+	width: 100px;
+	height: 60px;
+	padding-top: 40px;
+	border-right: 1px solid #CADEFF;
+	cursor: pointer;
+}
+#cart_footer{
+	width: 935px;
+	height: 48px;
+	background-color: #eaeaea;
+	margin-top: 10px;
+	border: 1px solid #c8c8c8;
+	line-height: 48px;
+	position: relative;
+}
+#cart_footer .checkAll{
+	display: inline-block;
+	margin:0 10px;
+}
+#deleteAll{
+	display: inline-block;
+	margin-left: 40px;
+	cursor: pointer;
+}
+#selected{
+	float: right;
+	margin-right: 150px;
+	cursor: pointer;
+}
+#cart_footer .total{
+	float: right;
+	margin-right: 100px;
+}
+#totalCount,#totalPrice{
+	font-weight: bold;
+	color: red;
+}
+#cart_footer .closing{
+	float: right;
+	display: block;
+	width: 100px;
+	border-left: 1px solid #c8c8c8; 
+	text-align: center;
+	color: #000;
+	font-weight: bold;	
+}
+#selectedView{
+	background-color: #fff;
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+	border: 1px solid #e8e8e8;
+	display: none;
+}
+#selectedView div{
+  position: relative;
+  width: 120px;
+  float: left;
+  margin: 20px;
+}
+#selectedView img{
+	width: 120px;
+	height: 80px;
+	border: 1px solid #e8e8e8;
+}
+#selectedView .del{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	line-height: 15px;
+	height: 15px;
+	width: 25px;
+	right: 0;
+	top: 0;
+	color: #fff;
+	font-size: 15px;
+	background: RGBA(0,0,0,.5);
+	cursor: pointer;
+	display: none;
+}
+#selectedView div:hover .del{
+	display: block;
+}
+.show #selectedView{
+	display: block;
+}

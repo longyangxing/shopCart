@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="styles/main.css">
+	<script type="text/javascript" src="scripts/main.js"></script>
+</head>
+<body>
+	<div id="cart">
+		<div id="cart_header">
+			<ul>
+				<li class="list_check">
+					<input type="checkbox" class="checkAll check" checked="checked"/>
+					<label>全选</label>
+				</li>
+				<li class="list_good">商品</li>
+				<li class="list_price">单价</li>
+				<li class="list_count">数量</li>
+				<li class="list_subTotal">小计</li>
+				<li class="list_act">操作</li>
+			</ul>
+		</div>
+		<div id="cart_item">
+			<div class="item_i">
+				<div class="checkbox">
+					<input type="checkbox" class="checkOne check" checked="checked">
+				</div>
+				<div class="good">
+					<img src="images/1.jpg">
+					<span>Casio/卡西欧 EX-TR350</span>
+				</div>
+				<div class="price">5999.88</div>
+				<div class="count">
+					<span class="reduce">-</span>
+					<input type="text" class="count_input" value="1">
+					<span class="add">+</span>
+				</div>
+				<div class="subTotal">
+					5999.88
+				</div>
+				<div class="act">
+					<span class="delete">删除</span>
+				</div>
+			</div>
+			<div class="item_i">
+				<div class="checkbox">
+					<input type="checkbox" class="checkOne check" checked="checked">
+				</div>
+				<div class="good">
+					<img src="images/2.jpg">
+					<span>Casio/卡西欧 EX-TR350</span>
+				</div>
+				<div class="price">7842.88</div>
+				<div class="count">
+					<span class="reduce">-</span>
+					<input type="text" class="count_input" value="1">
+					<span class="add">+</span>
+				</div>
+				<div class="subTotal">
+					7842.88
+				</div>
+				<div class="act">
+					<span class="delete">删除</span>
+				</div>
+			</div>
+			<div class="item_i">
+				<div class="checkbox">
+					<input type="checkbox" class="checkOne check" checked="checked">
+				</div>
+				<div class="good">
+					<img src="images/3.jpg">
+					<span>Casio/卡西欧 EX-TR350</span>
+				</div>
+				<div class="price">6001.88</div>
+				<div class="count">
+					<span class="reduce">-</span>
+					<input type="text" class="count_input" value="1">
+					<span class="add">+</span>
+				</div>
+				<div class="subTotal">
+					6001.88
+				</div>
+				<div class="act">
+					<span class="delete">删除</span>
+				</div>
+			</div>
+			<div class="item_i">
+				<div class="checkbox">
+					<input type="checkbox" class="checkOne check" checked="checked">
+				</div>
+				<div class="good">
+					<img src="images/4.jpg">
+					<span>Casio/卡西欧 EX-TR350</span>
+				</div>
+				<div class="price">2321.18</div>
+				<div class="count">
+					<span class="reduce">-</span>
+					<input type="text" class="count_input" value="1">
+					<span class="add">+</span>
+				</div>
+				<div class="subTotal">
+					2321.18
+				</div>
+				<div class="act">
+					<span class="delete">删除</span>
+				</div>
+			</div>
+		</div>
+		<div id="cart_footer" class="">
+			<label><input type="checkbox" class="checkAll check" checked="checked">全选</label>
+			<span id="deleteAll">删除</span>
+			<span class="closing">结算</span>
+			<div class="total">
+				 合计：￥<span id="totalPrice">11</span>
+			</div>
+			<div id="selected">
+				已选商品&nbsp;<span id="totalCount">1</span>&nbsp;件
+			</div>
+			<div id="selectedView"></div>
+		</div>
+	</div>
+</body>
+</html>
